@@ -8,6 +8,9 @@
   maximum-scale=5"
     />
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+
     <link rel="icon" href="devchallenges.png" />
 
     <link
@@ -23,73 +26,62 @@
 
     <title>Devchallenges</title>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    <header class="header">
+      <nav id="topnav" class="topnav">
+        <ul>
+          <li id="navbar-interior">
+            <a href="#">This interior</a>
+          </li>
+          <li class="menu-elem">
+            <a href="#">Home</a>
+          </li>
+          <li class="menu-elem">
+            <a href="#">Collection</a>
+          </li>
+          <li class="menu-elem">
+            <a href="#">About</a>
+          </li>
+          <li class="menu-elem">
+            <a href="#">Contact</a>
+          </li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="presentation">
+        <div class="presentation--text">
+          <h1>Modern Interior</h1>
+          <p>
+            A full-Service residential & commercial interior design and staging company offering
+            professional organizing & eco-services.
+          </p>
+          <a href="#" class="read-more">
+            Read more 
+          </a>
+        </div>
+        <div class="img-container">
+          <img src="./photo1.png" alt="" class="presentation--image-interior" />
+          <div class="card">
+            <div class="card--designer">
+              <img src="./photo2.png" alt="" class="card--image" />
+              <div class="card--designer-info">
+                <h3 class="card--designer-name">Aliza Webber</h3>
+                <p class="card--designer-job">Interior designer</p>
+              </div>
+            </div>
+            <h2 class="card--title">Designed in 2020 by Aliza Webber</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>created by Thibaud Fournès - devChallenges.io</p>
+    </footer>
+    <script src="./scripts.js"></script>
   </body>
 </html>
